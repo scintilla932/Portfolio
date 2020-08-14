@@ -1,0 +1,117 @@
+@media only screen and (min-width: 800px) and (max-width: 850px){
+    .photo h2{
+        margin: 10px;
+    }
+}
+
+@media only screen and  (max-width: 800px){
+    .btn{
+        margin: auto;
+    }
+    .about p{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and  (max-width: 600px){
+    #hello{
+        font-size: 38px;
+    }
+    .work_h1{
+        font-size: 30px;
+    }
+    .fa{
+        width: 12px;
+        font-size: 12px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+    /* Ham-Burger */
+    .navbar{
+        flex-direction: column ;
+            min-height: 68px;
+    }
+    .logo{
+        margin: 2px auto;
+        font-size: 22px;
+    }
+    .burger{
+       display: block; 
+       text-align: right;
+    }
+    .left_ul{
+        /* display: none; */
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    .left_ul li{
+        /* display: none; */
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0s;
+    }
+    .hideResponsive{
+        /* display: none; */
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    .left_ul.responsive li{
+        opacity: 1;
+        max-height: 20px;
+    }
+    .left_ul.responsive {
+        flex-direction: column;
+        text-align: center;
+        margin: -16px auto;
+        opacity: 1;
+        max-height: 300px;
+    }
+}
+
+@media only screen and  (max-width: 350px){
+    #hello{
+        font-size: 30px;
+    }
+    .card_box_project .box{
+        padding: 14px;
+    }
+    .card_box_project img {
+        width: 250px;
+        height: 215px;
+    }
+    .rainbow_box{
+        width: 200px;
+    }
+    .contact_icon {
+        margin: 17px;
+    }
+}
+@media only screen and  (max-width: 300px){
+    #hello{
+        font-size: 20px;
+    }
+    .card_box_project .box{
+        padding: 10px;
+    }
+    .card_box_project .box img {
+        width: 170px;
+        height: 140px;
+    }
+    .rainbow_box{
+        width: 100px;
+    }
+    .contact_icon {
+        margin: 8px;
+    }
+    .card_box_project .box h2 {
+        font-size: 12px;
+    }
+    .photo{
+        padding: 0;
+    }
+}
