@@ -1,0 +1,124 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/responsive.css')
+  link(rel='stylesheet' href='../static/owl.carousel.min.css')
+  link(rel='stylesheet' href='../static/owl.theme.default.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  title Anjali
+// Navigation Bar
+nav.navbar.background_nav
+  p.logo anjali
+  ul#myTopnav.left_ul
+    li(onclick='hideOnClick()')
+      a(href='#') Home
+    li(onclick='hideOnClick()')
+      a(href='#work') Project
+    li(onclick='hideOnClick()')
+      a(href='#aboutMe') About
+    li(onclick='hideOnClick()')
+      a(href='#aboutMe') Resume
+    li(onclick='hideOnClick()')
+      a(href='#contact') Contact
+  a.burger(href='javascript:void(0);' onclick='myFunction()')
+    i.fa.fa-bars
+// Home Section
+section#home.homeBg
+  .home-div.border_rainbow
+    p#hello Hello! I&apos;m Anjali.
+    p#intro
+  //
+    <div class="rainbow_box">
+    <button class="btn">RESUME</button>
+    </div>
+section#work
+  h1.work_h1 This is what I&apos;ve been up to...
+  span.work_head.border_rainbow Projects
+  .project
+    .card_box_project
+      .card
+        a(href='https://github.com/scintilla932/GroupChatApp' target='_blank')
+          .box.box1
+            img(src='../static/img/Chat_app_img.png' alt='Chat_app_img')
+            h2 Chat app
+      .card
+        a(href='https://github.com/scintilla932/Breast-Cancer-Prediction' target='_blank')
+          .box.box2
+            img(src='../static/img/breast_cancer_img.jpg' alt='Breast_cancer_img')
+            h2 Breast Cancer Detection
+      .card
+        a(href='https://github.com/scintilla932/Library' target='_blank')
+          .box.box2
+            img(src='../static/img/Library_img.jpg' alt='Breast_cancer_img')
+            h2 Library Management Website
+section#certification
+  .certification_div
+    h1.work_h1 I have been Learning...
+    span.work_head.border_rainbow Cerifications
+    .card_box_certificate.wrapper.owl-carousel.owl-theme
+      .certification_box
+        a.link(href='../static/certificates/certificateintroductionto_Sql.pdf' target='blank')
+          .certif_boxContent
+            img(src='../static/img/datacamp_logo.png' alt='Datacamp')
+            p.certif_name Introduction to PostgreSQL
+      .certification_box
+        a.link(href='../static/certificates/certificatejoiningdata_sql.pdf' target='blank')
+          .certif_boxContent
+            img(src='../static/img/datacamp_logo.png' alt='Datacamp')
+            p.certif_name Joining Data in PostgreSQL
+      .certification_box
+        a.link(href='../static/certificates/WhatsApp Image 2020-06-18 at 12.06.51.jpeg' target='blank')
+          .certif_boxContent
+            img(src='../static/img/nptel_logo.png' alt='Nptel')
+            p.certif_name Development of Softskills and Personality
+      .certification_box
+        a.link(href='' target='blank')
+          .certif_boxContent
+            img(src='../static/img/ardent_logo.png' alt='Ardent')
+            p.certif_name Machine Learning With Python
+      .certification_box
+        a.link(href='../static/certificates/Anjali_Ethics in Engineering Practice (1).jpg (3425×4724)' target='blank')
+          .certif_boxContent
+            img(src='../static/img/nptel_logo.png' alt='Nptel')
+            p.certif_name Ethics in Engineering Practices
+      .certification_box
+        a.link(href='../static/certificates/certificateintermediate_sql.pdf' target='blank')
+          .certif_boxContent
+            img(src='../static/img/datacamp_logo.png' alt='Datacamp')
+            p.certif_name Intermediate PostgreSQL
+      .certification_box
+        a.link(href='../static/certificates/WhatsApp Image 2020-06-18 at 12.06.26.jpeg' target='blank')
+          .certif_boxContent
+            img(src='../static/img/nptel_logo.png' alt='Nptel')
+            p.certif_name Data Structures and Algorithms in Python
+section#aboutMe
+  h1.work_h1 About Me
+  .twoParts
+    .photo
+      h2 Anjali Gupta
+      img(src='../static/img/me.jpeg' alt='My Picture')
+    .about
+      p
+        | I am Anjali Gupata. I am a still a student. I am a machine learning enthusiast and an on-processing web developer. I have a good grasp on programming languages like Python, C and C++. I have a decent understanding of various data structures. I have worked with several Machine learning models for various small and big projects. I have keen interest in learning new technology and am ready for hands-on projects.
+      button.btn.rainbow_box RESUME
+section#contact
+  ul.contact_ul
+    li.contact_icon
+      a.fa.fa-facebook(href='https://www.facebook.com/profile.php?id=100006585675284' target='blank')
+    li.contact_icon
+      a.fa.fa-linkedin(href='https://www.linkedin.com/in/anjali-gupta-b21132118/' target='blank')
+    li.contact_icon
+      a.fa.fa-instagram(href='https://www.instagram.com/scintilla1822/' target='blank')
+    li.contact_icon
+      a.fa.fa-github(href='https://github.com/scintilla932' target='blank')
+    li.contact_icon
+      a.fa.fa-google(href='' target='blank')
+  .footer
+    p Copyright &copy; 2020 | Anjali Gupta
+    p All Rights Reserved.
+script(src='../static/index.js')
+script(src='../static/jquery-3.5.1.min.js')
+script(src='../static/owl.carousel.min.js')
+script(src='../static/jquery.js')
